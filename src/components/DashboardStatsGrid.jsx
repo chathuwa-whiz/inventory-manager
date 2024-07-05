@@ -3,7 +3,7 @@ import { IoBagHandle } from "react-icons/io5";
 
 export default function DashboardStatsGrid() {
   return (
-    <div className='flex gap-4'>
+    <div className='flex gap-4 mb-4'>
 
         <BoxWrapper>
             <div className='rounded-full h-12 w-12 flex items-center justify-center bg-sky-500'>
