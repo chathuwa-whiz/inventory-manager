@@ -1,11 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import DashboardStatsGrid from './DashboardStatsGrid'
+import TransactionChart from './TransactionChart'
+import BuyerProfileChart from './BuyerProfileChart'
 
 export default function Dashboard() {
   return (
     <div>
-        <h1>Dashboard</h1>
-        <Link to={'/products'}>go to products</Link>
+        <DashboardStatsGrid />
+        <div className='flex gap-4'>
+          <TransactionChart />
+          <BuyerProfileChart />
+        </div>
     </div>
   )
 }
