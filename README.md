@@ -1,70 +1,121 @@
-# Getting Started with Create React App
+# Advanced Stock and Customer Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Advanced Stock and Customer Management System repository! This project is built using the MERN stack (MongoDB, Express.js, React.js, Node.js) and provides comprehensive CRUD services for managing various aspects of stock and customer data.
 
-## Available Scripts
+![Dashboard (Still Developing)](./src/images/dashboard.png)
 
-In the project directory, you can run:
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Project Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This system is designed to streamline the management of inventory, products, suppliers, and more. It includes the following key CRUD services:
+- **Dashboard**: Provides an overview of the system's data.
+- **Product Management**: Manage product details, including adding, updating, and deleting products.
+- **Stock Management**: Track stock levels and manage inventory.
+- **Supplier Management**: Maintain a list of suppliers and their products.
+- **Product Category Management**: Organize products into categories for easier management.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Inventory Manager Role
 
-### `npm test`
+As the Inventory Manager, my role is focused on the **Stock Management** module. This involves:
+- Keeping track of stock levels.
+- Ensuring that inventory data is accurate and up-to-date.
+- Managing stock inflow and outflow.
+- Generating reports on stock status.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- **Real-time Data**: Utilize MongoDB for real-time data storage and retrieval.
+- **User-friendly Interface**: Built with React.js for a responsive and intuitive user interface.
+- **Efficient Backend**: Powered by Node.js and Express.js for a robust backend service.
+- **Comprehensive Management**: Covers all aspects of stock and customer management.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Follow these steps to set up the project on your local machine:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+Make sure you have the following installed:
+- Node.js (v14.x or higher)
+- MongoDB (v4.x or higher)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Steps
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Clone the Repository**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    ```sh
+    https://github.com/chathuwa-whiz/inventory-manager.git
+    cd your-repo-name
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Install Server Dependencies**
 
-## Learn More
+    ```sh
+    cd server
+    npm install
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Install Client Dependencies**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    ```sh
+    cd ../client
+    npm install
+    ```
 
-### Code Splitting
+4. **Configure Environment Variables**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    Create a `.env` file in the `server` directory and add the following:
 
-### Analyzing the Bundle Size
+    ```env
+    MONGO_URI=your-mongodb-uri
+    PORT=5000
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+5. **Run the Development Server**
 
-### Making a Progressive Web App
+    Open two terminals:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    - In the first terminal, start the server:
 
-### Advanced Configuration
+        ```sh
+        cd server
+        npm run dev
+        ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    - In the second terminal, start the client:
 
-### Deployment
+        ```sh
+        cd client
+        npm start
+        ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+6. **Access the Application**
 
-### `npm run build` fails to minify
+    Open your browser and navigate to `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Usage
+
+Once the application is up and running, you can explore the various features through the intuitive interface. As the Inventory Manager, you will primarily interact with the Stock Management module to maintain and update stock information.
+
+## Contributing
+
+We welcome contributions from the community. To contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a pull request.
+
+Please ensure your code adheres to our coding standards and includes appropriate tests.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
